@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Proyect - Full.</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/bg.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawsome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="padding">
+        <div class="alert hide complement">
+            <span class="fas fa-exclamation-circle modificar"></span>
+            <span class="msg modificar">Info : This is a info alert.</span>
+            <span class="close-btn modificar">
+                <span class="fas fa-times modificar"></span>
+            </span>
+        </div>
+    </div>
+    <a href="#banner" class="icon-go-up block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+    </a>
+    <header>
+        <a href="#" class="logo">Complement<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2 class="onclick">Always Choose Good</h2>
+            <p>
+                Lorem ipsum dolor sit  amet ducimus commodi error nemo provident aspernatur eaque a enim consequatur dolore ipsum ut.
+            </p>
+            <a href="#" class="btn btn-popup" onclick="popupToggle();">Show Modal</a>
+        </div>
+    </section>
+
+    <div id="popup">
+        <div class="content-popup">
+            <img src="images/image-popup.png" alt="">
+            <h2>Join Our Newsletter</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing modi inventore dolor sequi est pariatur nostrum.
+            </p>
+            <div class="inpuBox">
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="inpuBox">
+                <input type="submit" value="Sing Up" class="btn-popup">
+            </div>
+        </div>
+        <span class="close" onclick="popupToggle();">
+            <img src="images/close-modal-btn.png" alt="">
+        </span>
+    </div>
+
+    <div class="margin">
+        <section class="about" id="about">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titleText"><span>A</span>bout Us</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in accusantium quidem id, itaque, optio aspernatur cum porro incidunt aliquam laborum recusandae reiciendis non reprehenderit perspiciatis. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta similique molestiae eligendi, commodi eos dolorum. Molestiae, rem. Accusamus quam culpa delectus nobis quod eum tempore, eos nihil asperiores cum suscipit.
+                    </p>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Our <span>M</span>enu</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ipsa repellendus
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/menu1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Salads</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/menu2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Soup</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/menu3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Pasta</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/menu4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Salads</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/menu5.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Soup</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/menu6.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Pasta</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+           <button style="border:none; cursor: pointer;" class="btn">Show Alert</button>
+        </div>
+    </section>
+
+    <div class="container__faq">
+        <div class="container__faq--center">
+            <div class="container__faq---right">
+                <h4 class="title__faq">
+                    Nuestras recetas te <span>ayudaran</span> a convertirte en un experto en gastronomia.
+                </h4>
+                <p class="desc__faq">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit Assumenda dolores suscipit! Suscipit harum hic nostrum corporis maiores id ratione vitae.
+                </p>
+
+                <div class="container__faq--down">
+                    <div class="section__down">
+                       <div class="linear">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"/>
+                        </svg>
+                       </div>
+
+                        <p class="desc__faq">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+
+                    <div class="section__down">
+                      <div class="linear">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-asterisk" viewBox="0 0 16 16">
+                            <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
+                          </svg>
+                      </div>
+
+                        <p class="desc__faq">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+
+                    <div class="section__down">
+                        <div class="linear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                              </svg>
+                        </div>
+
+                        <p class="desc__faq">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+
+                    <div class="section__down">
+                       <div class="linear">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                            <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+                          </svg>
+                       </div>
+
+                        <p class="desc__faq">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+
+                    <div class="section__down">
+                       <div class="linear">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                            <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                          </svg>
+                       </div>
+
+                        <p class="desc__faq">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+
+                    <div class="section__down">
+                        <div class="linear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>
+                        </div>
+
+                        <p class="desc__faq">
+                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+
+            <div class="container__faq--left">
+                <div class="acordion-box">
+                    <div class="funtion">
+                        <div class="icon-andTx">
+                            <span  class="text__box block-span">Por que este sitio</span>
+                        </div>
+                        <div class="icon-box-down">
+                            <span class="fas fa-angle-down flecha"></span>
+                        </div>
+                  </div>
+                  <div class="answer">
+                    <p class="desc__acordion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate vero ratione aut magni, commodi porro expedita et laborum asperiores odio nisi adipisci dolores similique impedit enim magnam neque dignissimos
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="acordion-box">
+                    <div class="funtion">
+                        <div class="icon-andTx">
+                            <span class="text__box block-span">Preguntas frecuentes</span>
+                        </div>
+                        <div class="icon-box-down">
+                            <span class="fas fa-angle-down flecha"></span>
+                        </div>
+                  </div>
+                  <div class="answer">
+                    <p class="desc__acordion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate vero ratione aut magni, commodi porro expedita et laborum asperiores odio nisi adipisci dolores similique impedit enim magnam neque dignissimos
+                    </p>
+                  </div>
+                </div>
+
+                <div class="acordion-box">
+                    <div class="funtion">
+                        <div class="icon-andTx">
+                            <span class="text__box block-span">Recetas</span>
+                        </div>
+                        <div class="icon-box-down">
+                            <span class="fas fa-angle-down flecha"></span>
+                        </div>
+                  </div>
+                  <div class="answer">
+                    <p class="desc__acordion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate vero ratione aut magni, commodi porro expedita et laborum asperiores odio nisi adipisci dolores similique impedit enim magnam neque dignissimos
+                    </p>
+                  </div>
+                </div>
+
+                <div class="acordion-box">
+                    <div class="funtion">
+                        <div class="icon-andTx">
+                            <span class="text__box block-span">Competencias</span>
+                        </div>
+                        <div class="icon-box-down">
+                            <span class="fas fa-angle-down flecha"></span>
+                        </div>
+                  </div>
+                  <div class="answer">
+                    <p class="desc__acordion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate vero ratione aut magni, commodi porro expedita et laborum asperiores odio nisi adipisci dolores similique impedit enim magnam neque dignissimos
+                    </p>
+                  </div>
+                </div>
+
+                <div class="acordion-box">
+                    <div class="funtion">
+                        <div class="icon-andTx">
+                            <span href="" class="text__box block-span">Respuestas</span>
+                        </div>
+                        <div class="icon-box-down">
+                            <span class="fas fa-angle-down flecha"></span>
+                        </div>
+                  </div>
+                  <div class="answer">
+                    <p class="desc__acordion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate vero ratione aut magni, commodi porro expedita et laborum asperiores odio nisi adipisci dolores similique impedit enim magnam neque dignissimos
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="titleText">Our Kitchen <span>E</span>xpert</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ipsa repellendus
+            </p>
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/expert1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>Someone Famous</h2>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/expert2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>Someone Famous</h2>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/expert3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>Someone Famous</h2>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/expert4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>Someone Famous</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText">They <span>S</span>aid About Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ipsa repellendus
+            </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/testi1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi commodi illum voluptas adipisci ullam amet dicta earum cumque natus quaerat.
+                    </p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/testi2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi commodi illum voluptas adipisci ullam amet dicta earum cumque natus quaerat.
+                    </p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/testi3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi commodi illum voluptas adipisci ullam amet dicta earum cumque natus quaerat.
+                    </p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Ipsa repellendus
+            </p>
+        </div>
+
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="name" id="name" placeholder="Email Address">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" name="name" id="name" value="Confirmar">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container-row flexing">
+                <a href="#" class="logo">Complement<span>.</span></a>
+                <p class="desc__footer">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis atque error dolores dolore porro. Quos, quia pariatur iste libero.
+                </p>
+            </div>
+
+            <div class="footer__container-row position">
+                <a href="#" class="link__footer block">Complements</a>
+                <a href="#" class="link__footer block">Infprmation</a>
+                <a href="#" class="link__footer block">Corporate</a>
+                <a href="#" class="link__footer block">Web API</a>
+                <a href="#" class="link__footer block">Help</a>
+                <a href="#" class="link__footer block">Market</a>
+                <a href="#" class="link__footer block">Docs</a>
+                <a href="#" class="link__footer block">Team</a>
+            </div>
+
+            <div class="footer__container-row position">
+                <a href="#" class="link__footer block">Building</a>
+                <a href="#" class="link__footer block">Interaction</a>
+                <a href="#" class="link__footer block">Files</a>
+                <a href="#" class="link__footer block">Web API</a>
+                <a href="#" class="link__footer block">Software</a>
+                <a href="#" class="link__footer block">Web Development</a>
+            </div>
+
+            <div class="footer__container-row position-right">
+                <h4 class="h4">
+                    Sing in with us for more content.
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit Deleniti numquam.
+                </p>
+
+                <div class="footer__inputs">
+                   <div class="input-alone">
+                        <input type="text" name="text" id="" placeholder="Write Something">
+                   </div>
+                    <div class="btn-alone">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+
+                <div class="footer__icons">
+                    <div class="icon-one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>
+                    </div>
+                    <div class="icon-one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>
+                    </div>
+                    <div class="icon-one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                            <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                            <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+                          </svg>
+                    </div>
+                    <div class="icon-one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>
+                    </div>
+                    <div class="icon-one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            copyriht 2022 - Adrian Jesus Montilla Baez - FrontEnd Web Development.
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
